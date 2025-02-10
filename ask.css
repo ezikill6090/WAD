@@ -1,0 +1,133 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+/* Heading Styling */
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: #D7E9F9;
+}
+
+/* User List Styling */
+#user-list {
+    margin-top: 20px;
+    padding: 0;
+    list-style-type: none;
+    font-size: 18px;
+}
+
+/* Form Container Styling */
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+/* Form Styling */
+#registration-form {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: left;
+}
+
+/* Label Styling */
+label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #131111;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Input Field Styling */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 12px;
+    border: 2px solid #000;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    background-color: rgb(253, 237, 241);
+    margin-bottom: 15px;
+}
+
+/* Focus Effect for Input Fields */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(72, 155, 51, 0.5);
+}
+
+/* Button Styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Success and Error Message Styling */
+.success-message,
+.error-message {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    button {
+        font-size: 14px;
+    }
+}
